@@ -62,7 +62,7 @@ import {
   Vector3,
   VectorKeyframeTrack,
   sRGBEncoding,
-} from "../3D File Import Animation/modules/three.module.js";
+} from "../../3D File Import Animation/modules/three.module.js";
 
 class GLTFLoader extends Loader {
   constructor(manager) {

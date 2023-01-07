@@ -1,6 +1,10 @@
-import { GLTFLoader } from "./GLTFLoader.js";
+import * as THREE from "./modules/three.module.js";
+import { GLTFLoader } from "./modules/GLTFLoader.js";
+// import { OrbitControls } from "./node_modules/three/examples/jsm/controls/OrbitControls";
 
-var camera, scene, renderer, controls, mesh, autoRotate;
+import { OrbitControls } from "./modules/OrbitControls.js";
+
+var camera, scene, renderer, mesh, autoRotate;
 
 scene = new THREE.Scene();
 
@@ -69,13 +73,15 @@ loadGLTF.load("scene.gltf", function (gltf) {
 
 // Orbiter
 ///render orbit controls
-controls = new THREE.OrbitControls(camera, renderer.domElement);
-// controls.target.set(4.5, 0, 4.5);
+// controls = new THREE.OrbitControls(camera, renderer.domElement);
+let controls = new OrbitControls(camera, renderer.domElement);
+
 controls.enablePan = false;
 controls.maxPolarAngle = Math.PI / 2;
 controls.enableDamping = true;
 // controls.autoRotate = true;
 // controls.autoRotateSpeed = 0.03;
+// controls.target.set(4.5, 0, 4.5);
 
 // Lights
 
@@ -454,7 +460,7 @@ function animate() {
   // xWing.xCenter.rotateY(0.01);
 
   // autoRotate.update();
-  controls.update();
+  // controls.update();
   renderer.render(scene, camera);
 }
 

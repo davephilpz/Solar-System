@@ -1,7 +1,5 @@
 import * as THREE from "./modules/three.module.js";
 import { GLTFLoader } from "./modules/GLTFLoader.js";
-// import { OrbitControls } from "./node_modules/three/examples/jsm/controls/OrbitControls";
-
 import { OrbitControls } from "./modules/OrbitControls.js";
 
 var camera, scene, renderer, mesh, autoRotate;

@@ -2,3 +2,5 @@ node_modules
 test.html
 Three JS Rocks.html
 Three JS Rocks.js
+# Local Netlify folder
+.netlify

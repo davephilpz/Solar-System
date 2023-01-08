@@ -4,12 +4,13 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node": "^14.21.0",
+    "parcel-bundler": "^1.12.5",
     "three": "^0.146.0"
   }
 }

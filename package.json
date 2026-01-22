@@ -1,0 +1,16 @@
+{
+  "name": "solar-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^14.21.0",
+    "parcel-bundler": "^1.12.5",
+    "three": "^0.146.0"
+  }
+}
